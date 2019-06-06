@@ -12,15 +12,15 @@ When you have completed this code pattern, you will understand how to:
 * Run a Jupyter notebook
 * Use a variety of measures to evaluate the accuracy of a model
 
-<!-- ![architecture](doc/source/images/architecture.png) -->
+![architecture](doc/source/images/architecture.png)
 
 ## Flow
 
 1. Create a data set
 2. Train a model for image classification
 3. Deploy it to a REST API endpoint
-4. Run the notebook
-5. Analyze the results
+4. Validate the model with new data
+
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ The code included in this code pattern runs in a Jupyter Notebook. The notebook 
 5. [Train the model](#5-train-the-model)
 6. [Deploy and test](#6-deploy-and-test)
 7. [Run the notebook](#7-run-the-notebook)
-7. [Analyze the results](#7-analyze-the-results)
+8. [Analyze the results](#8-analyze-the-results)
 
 ### 1. Clone the repo
 
@@ -136,6 +136,8 @@ The code included in this code pattern runs in a Jupyter Notebook. After you con
 
   ![required_setup](doc/source/images/required_setup.png)
 
+* Also edit `INPUT_DIR` in **Required setup!** (see above) if you want to use images in a location other than the default (../data/test). The sub-directory names will be used as the ground truth category names unless there is a mapping in `category_map`.
+
 * Use the drop-down menu `Cell > Run All` to run the notebook, or run the cells one at a time top-down using the play button.
 
   ![run_all](doc/source/images/run_all.png)
@@ -148,7 +150,7 @@ The code included in this code pattern runs in a Jupyter Notebook. After you con
   rsp = requests.post(URL, verify=False, auth=None, files=files)
   ```
 
-### 7. Analyze the results
+### 8. Analyze the results
 
 #### Confusion matrix
 
