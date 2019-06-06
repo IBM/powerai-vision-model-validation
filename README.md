@@ -65,7 +65,7 @@ Use your browser to access the PowerAI Vision web UI for steps 3-6.
 
 To create a new data set:
 
-* Use the `Data Sets` tab and click on the `Create new data set` card.`
+* Use the `Data Sets` tab and click on the `Create new data set` card.
 
   ![create_new_dataset](doc/source/images/create_new_dataset.png)
 
@@ -92,7 +92,7 @@ With your categorized training images and a few more clicks, PowerAI Vision will
 * Click the `Train model` button.
 * Ensure that `Image classification` is selected.
 * Select the default model (or explore your options).
-* Click on `Advanced options` to see some additional parameters. This is where you would adjust some settings if you want to speed up training (for quick test). Advanced users may use these settings to try to improve the accuracy of the model.
+* Click on `Advanced options` to see some additional parameters. This is where you would adjust some settings if you want to speed up training (for a quick test). Advanced users may use these settings to try to improve the accuracy of the model.
 * Click `Train`.
 
 During training, your dataset will be divided so that the model-in-training can be trained, tested, and validated.
@@ -109,9 +109,9 @@ After training is complete, there is a convenient `Deploy model` button. You can
 * Click on the `Models` tab.
 * Select the model you want to deploy.
 * Click `Deploy model` and then `Deploy`.
-* Click on the `Deployed Models` tab. Wait for the model status to show "Ready".
-* Here you can copy the API endpoint. Click `Copy` and save the endpoint to use later for external access.
-* With in this UI, you can also test the model. Use the `Import files` button or drag-and-drop to test the model with an image file.
+* Click on the `Deployed Models` tab. Wait for the model status to show "Ready" and then click on the row.
+* Here you can copy the API endpoint. Click `Copy` and save the endpoint to use later in the Jupyter notebook.
+* With the PowerAI Vision UI, you can also test the model. Use the `Import files` button (or drag-and-drop) to test the model with an image file.
 
 ![test_model](doc/source/images/test_model.png)
 
@@ -132,7 +132,7 @@ The code included in this code pattern runs in a Jupyter Notebook. After you con
 
   ![open_notebook](doc/source/images/open_notebook.png)
 
-* Edit the cell below **Required setup!** to replace the URL with the API endpoint of your deployed model. Use the copy button to capture the whole URL.
+* Edit the cell below **Required setup!** to replace the `URL` with the API endpoint of your deployed model. Use the copy button to capture the whole URL.
 
   ![required_setup](doc/source/images/required_setup.png)
 
@@ -160,7 +160,7 @@ A confusion matrix is often the best way to visualize the accuracy of a model. D
 
 #### Category statistics
 
-For each category, we can aggregate the counts, positive and negatives and produce a variety of statistics. Depending on your use case, the best measure of "accuracy" for a model may be one or more of: sensitivity (recall), precision, accuracy, Mathews correlation coefficient (MCC), or F1 score.
+For each category, we can aggregate the counts, positives, and negatives and then produce a variety of statistics. Depending on your use case, the best measure of "accuracy" for a model may be one or more of: sensitivity (recall), precision, accuracy, Mathews correlation coefficient (MCC), or F1 score.
 
 The category statics are written to a CSV file to be convenient for other reports and then are presented (and transposed) in the notebook.
 
@@ -168,7 +168,7 @@ The category statics are written to a CSV file to be convenient for other report
 
 #### Overall statistics
 
-To get an overall evaluation of the model across all categories, you can calculate aggregate some of the statistics. The notebook aggregates the most popular statistics and also stores them in a CSV file.
+To get an overall evaluation of the model across all categories, you can aggregate some of the statistics. The notebook aggregates the most popular statistics and also stores them in a CSV file.
 
 ![overall_stats](doc/source/images/overall_stats.png)
 
