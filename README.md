@@ -19,8 +19,8 @@ When you have completed this code pattern, you will understand how to:
 1. Create a data set
 2. Train a model for image classification
 3. Deploy it to a REST API endpoint
-4. Run the notebook
-5. Analyze the results
+4. Validate the model with new data
+
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ The code included in this code pattern runs in a Jupyter Notebook. The notebook 
 5. [Train the model](#5-train-the-model)
 6. [Deploy and test](#6-deploy-and-test)
 7. [Run the notebook](#7-run-the-notebook)
-7. [Analyze the results](#7-analyze-the-results)
+8. [Analyze the results](#8-analyze-the-results)
 
 ### 1. Clone the repo
 
@@ -150,7 +150,7 @@ The code included in this code pattern runs in a Jupyter Notebook. After you con
   rsp = requests.post(URL, verify=False, auth=None, files=files)
   ```
 
-### 7. Analyze the results
+### 8. Analyze the results
 
 #### Confusion matrix
 
