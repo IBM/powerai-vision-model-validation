@@ -12,7 +12,7 @@ When you have completed this code pattern, you will understand how to:
 * Run a Jupyter notebook
 * Use a variety of measures to evaluate the accuracy of a model
 
-<!-- ![architecture](doc/source/images/architecture.png) -->
+![architecture](doc/source/images/architecture.png)
 
 ## Flow
 
@@ -135,6 +135,8 @@ The code included in this code pattern runs in a Jupyter Notebook. After you con
 * Edit the cell below **Required setup!** to replace the URL with the API endpoint of your deployed model. Use the copy button to capture the whole URL.
 
   ![required_setup](doc/source/images/required_setup.png)
+
+* Also edit `INPUT_DIR` in **Required setup!** (see above) if you want to use images in a location other than the default (../data/test). The sub-directory names will be used as the ground truth category names unless there is a mapping in `category_map`.
 
 * Use the drop-down menu `Cell > Run All` to run the notebook, or run the cells one at a time top-down using the play button.
 
