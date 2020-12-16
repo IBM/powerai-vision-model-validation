@@ -1,3 +1,7 @@
+# WARNING: This repository is no longer maintained :warning:
+
+> This repository will not be updated. The repository will be kept available in read-only mode.
+
 # Computer vision model validation
 
 In this code pattern, we will evaluate an image classification model using a Jupyter notebook. Our model is deployed with PowerAI Vision for inference via a REST API endpoint. We'll use a collection of images that have already been classified as our "ground truth" and see how the inference results compare to the ground truth.
